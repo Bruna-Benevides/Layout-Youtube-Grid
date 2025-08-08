@@ -68,8 +68,6 @@ main {
 
 .lateral .propaganda .video-sugeridos .infos {
     display: flex;
-    /* align-items: center; */
-    /* gap: 15px; */
 }
 
 .propaganda {
@@ -82,14 +80,14 @@ main {
 }
 
 h1 {
-    /* font-weight: 700; */
+   
     font-size: 18px;
     color: black;
 
 }
 
 h2 {
-    /* font-weight: 700; */
+   
     font-size: 14px;
     color: black;
 
