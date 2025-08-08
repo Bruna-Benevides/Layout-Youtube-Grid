@@ -1,0 +1,104 @@
+body {
+    display: grid;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+
+
+}
+
+main {
+    display: grid;
+    /* max-width: 900px; */
+    grid-template-areas: "destaque lateral"
+        "video-destaque propaganda"
+        "video-destaque video-sugeridos";
+    grid-template-columns: 700px 1fr;
+    grid-template-rows: 270px 56px;
+    margin: 60px auto 0;
+    gap: 15px 15px;
+}
+
+.destaque {
+    grid-area: destaque;
+    display: grid;
+    padding: 16px 8px;
+    gap: 7px;
+}
+
+.destaque video {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.destaque .titulo,
+.vistos,
+.texto p {
+    margin: 15px 0;
+    line-height: 100%;
+}
+
+.video-destaque {
+    grid-area: video-destaque;
+}
+
+.lateral {
+    grid-area: lateral;
+    font-size: 11px;
+}
+
+.video-sugeridos {
+    grid-area: video-sugeridos;
+    display: flex;
+    padding: 16px 8px;
+    gap: 5px;
+}
+
+.video-sugeridos img {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    max-width: 215px;
+    /* flex-wrap: wrap; */
+    gap: 5px;
+}
+
+.lateral .propaganda .video-sugeridos .infos {
+    display: flex;
+    /* align-items: center; */
+    /* gap: 15px; */
+}
+
+.propaganda {
+    grid-area: propaganda;
+    padding: 15px;
+}
+
+.propaganda img {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+h1 {
+    /* font-weight: 700; */
+    font-size: 18px;
+    color: black;
+
+}
+
+h2 {
+    /* font-weight: 700; */
+    font-size: 14px;
+    color: black;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+p {
+    font-weight: 300;
+    color: black;
+}
